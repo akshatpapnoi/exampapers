@@ -8,5 +8,5 @@ sudo apt install -y python3-venv
 
 python3 -m venv virtualenv
 source virtualenv/bin/activate
-pip3 install -r requirements
+pip3 install -r requirements.txt
 deactivate
