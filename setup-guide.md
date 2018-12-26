@@ -4,5 +4,5 @@
 
 [COGG]: /contribution-guide.md
 
-2. chmod 600 setup.sh
+2. chmod 777 setup.sh
 3. ./setup.sh
