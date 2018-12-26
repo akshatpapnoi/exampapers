@@ -1,5 +1,5 @@
 # exampapers
-This project aims at making a web platform to make available various colleges' examination past papers online.
+This project aims at making a web platform to make available various colleges' previous years' semester examination papers online.
 
 This is an open source project and anyone can contribute.
 
