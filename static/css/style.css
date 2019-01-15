@@ -1,0 +1,65 @@
+html,body{
+	background-color: #E4FAF4;
+	height: 100%;
+}
+
+/************* NAVBAR SECTION ******************/
+.navbar{
+	color: #fff;
+}
+
+.logo{
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+
+/************** BLOCK BODY SECTION ****************/
+.college-section {
+	padding: 20px 10px;
+}
+
+.college-select{
+	color: #2c3e50;
+}
+
+.college-section-content{
+	padding: 10px 60px;
+}
+
+.college-container{
+	background-color: #00994c;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	height: 200px;
+	width: 200px;
+	line-height: 200px;
+	transition: box-shadow .3s;
+}
+
+.college-container h1{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.college-container:hover{
+	box-shadow: 0 0 30px rgba(0,0,255,0.7); 
+}
+
+/*************FOOTER SECTION ******************/
+.footer{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	background-color: #2c3e50;
+	color: #fff;
+}
+
+.footer a{
+	color: #00994c;
+}
+
+.footer a:hover	{
+	color: #66ff66;
+}
+
