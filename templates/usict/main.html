@@ -1,0 +1,187 @@
+{% extends './../base.html' %}
+
+
+{% block body %}
+<nav class="nav nav-pills nav-fill subnav">
+  <a class="nav-item nav-link active" id="bachelors-button" href="#">BACHELORS</a>
+  <a class="nav-item nav-link" id="masters-button" href="#">MASTERS</a>
+</nav>
+
+<!---------------------BACHELORS---------------------->
+<div class="container bachelors">
+	<div class="row">
+		<div class="col-md-12 college-section">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="choice-select">
+						<h2><span>Select Branch</span></h2>
+					</div>
+					<form id="form1">
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="cse1" value="cse" name="branch1">
+						  <label class="custom-control-label" for="cse1"><h4>COMPUTER SCIENCE AND ENGINEERING</h4></label>
+						</div>
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="it1" value="it" name="branch1">
+						  <label class="custom-control-label" for="it1"><h4>INFORMATION TECHNOLOGY</h4></label>
+						</div>
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="ece1" value="ece" name="branch1">
+						  <label class="custom-control-label" for="ece1"><h4>ELECTRONICS AND COMMUNICATION</h4></label>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<div class="choice-select">
+						<h2><span>Select Semester</span></h2>
+					</div>
+					<form id="form2">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem1-1" value="sem1" name="semester1">
+								  <label class="custom-control-label" for="sem1-1"><h4>SEMESTER 1</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem3-1" value="sem3" name="semester1">
+								  <label class="custom-control-label" for="sem3-1"><h4>SEMESTER 3</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem5-1" value="sem5" name="semester1">
+								  <label class="custom-control-label" for="sem5-1"><h4>SEMESTER 5</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem7-1" value="sem7" name="semester1">
+								  <label class="custom-control-label" for="sem7-1"><h4>SEMESTER 7</h4></label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem2-1" value="sem2" name="semester1">
+								  <label class="custom-control-label" for="sem2-1"><h4>SEMESTER 2</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem4-1" value="sem4" name="semester1">
+								  <label class="custom-control-label" for="sem4-1"><h4>SEMESTER 4</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem6-1" value="sem6" name="semester1">
+								  <label class="custom-control-label" for="sem6-1"><h4>SEMESTER 6</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem8-1" value="sem8" name="semester1">
+								  <label class="custom-control-label" for="sem8-1"><h4>SEMESTER 8</h4></label>
+								</div>	
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="go-button">
+					<button type="button" class="btn  btn-lg" id="gobtn1">GO !</button>
+			</div>
+		</div>		
+	</div>
+</div>
+
+
+<!----------------------MASTERS-------------------------------------->
+<div class="container masters" style="display: none;">
+	<div class="row">
+		<div class="col-md-12 college-section">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="choice-select">
+						<h2><span>Select Branch</span></h2>
+					</div>
+					<form id="form3">
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="cse2" value="cse" name="branch2">
+						  <label class="custom-control-label" for="cse2"><h4>COMPUTER SCIENCE AND ENGINEERING</h4></label>
+						</div>
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="it2" value="it" name="branch2">
+						  <label class="custom-control-label" for="it2"><h4>INFORMATION TECHNOLOGY</h4></label>
+						</div>
+						<div class="custom-control custom-radio">
+						  <input type="radio" class="custom-control-input" id="ece2" value="ece" name="branch2">
+						  <label class="custom-control-label" for="ece2"><h4>ELECTRONICS AND COMMUNICATION</h4></label>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<div class="choice-select">
+						<h2><span>Select Semester</span></h2>
+					</div>
+					<form id="form4">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem1-2" value="sem1" name="semester2">
+								  <label class="custom-control-label" for="sem1-2"><h4>SEMESTER 1</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem3-2" value="sem3" name="semester2">
+								  <label class="custom-control-label" for="sem3-2"><h4>SEMESTER 3</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem5-2" value="sem5" name="semester2">
+								  <label class="custom-control-label" for="sem5-2"><h4>SEMESTER 5</h4></label>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem2-2" value="sem2" name="semester2">
+								  <label class="custom-control-label" for="sem2-2"><h4>SEMESTER 2</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem4-2" value="sem4" name="semester2">
+								  <label class="custom-control-label" for="sem4-2"><h4>SEMESTER 4</h4></label>
+								</div>
+								<div class="custom-control custom-radio">
+								  <input type="radio" class="custom-control-input" id="sem6-2" value="sem6" name="semester2">
+								  <label class="custom-control-label" for="sem6-2"><h4>SEMESTER 6</h4></label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="go-button">
+					<button type="button" class="btn  btn-lg" id="gobtn2">GO !</button>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#bachelors-button").click(function(){
+  	$(".masters").hide();
+  	$(".bachelors").show();
+  	$("#bachelors-button").addClass("active");
+  	$("#masters-button").removeClass("active");
+  });
+
+  $("#masters-button").click(function(){
+  	$(".bachelors").hide();
+  	$(".masters").show();
+  	$("#masters-button").addClass("active");
+  	$("#bachelors-button").removeClass("active");
+  });
+
+  $("#gobtn1").click(function(){
+  	alert($("input[name='branch1']:checked").val());
+  	alert($("input[name='semester1']:checked").val());
+  });
+
+  $("#gobtn2").click(function(){
+  	alert($("input[name='branch2']:checked").val());
+  	alert($("input[name='semester2']:checked").val());
+  });
+
+});
+</script>
+
+{% endblock %}
