@@ -16,7 +16,10 @@ def main(request):
 		return redirect('usict:papers', degree=degree, branch=branch, semester=semester )
 
 	else:
-		return render(request, template_name='usict/main.html')
+		context ={
+			'page_title': 'USICT',
+		}
+		return render(request, template_name='usict/main.html', context=context)
 
 def papers(request, degree, branch, semester):
 	return HttpResponse("papers")
