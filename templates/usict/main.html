@@ -172,13 +172,43 @@ $(document).ready(function(){
   });
 
   $("#gobtn1").click(function(){
-  	alert($("input[name='branch1']:checked").val());
-  	alert($("input[name='semester1']:checked").val());
+  	var branch = $("input[name='branch1']:checked").val();
+  	var semester = $("input[name='semester1']:checked").val();
+
+  	var form = $(document.createElement('form'));
+    $(form).attr("action", '{% url "usict:main" %}');
+    $(form).attr("method", "POST");
+
+    var input = $("<input>").attr("type", "hidden").attr("name", "degree").val('btech');
+    $(form).append($(input));
+    var input = $("<input>").attr("type", "hidden").attr("name", "branch").val(branch);
+    $(form).append($(input));
+    var input = $("<input>").attr("type", "hidden").attr("name", "semester").val(semester);
+    $(form).append($(input));
+    $(form).append('{% csrf_token %}');
+    $(document.body).append(form);
+    $(form).submit();
+
   });
 
   $("#gobtn2").click(function(){
-  	alert($("input[name='branch2']:checked").val());
-  	alert($("input[name='semester2']:checked").val());
+  	var branch = $("input[name='branch2']:checked").val();
+  	var semester = $("input[name='semester2']:checked").val();
+
+  	var form2 = $(document.createElement('form'));
+    $(form2).attr("action", '{% url "usict:main" %}');
+    $(form2).attr("method", "POST");
+
+    var input = $("<input>").attr("type", "hidden").attr("name", "degree").val('masters');
+    $(form2).append($(input));
+    var input = $("<input>").attr("type", "hidden").attr("name", "branch").val(branch);
+    $(form2).append($(input));
+    var input = $("<input>").attr("type", "hidden").attr("name", "semester").val(semester);
+    $(form2).append($(input));
+    $(form2).append('{% csrf_token %}');
+    $(document.body).append(form2);
+    $(form2).submit();
+
   });
 
 });
