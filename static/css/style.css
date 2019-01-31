@@ -4,14 +4,23 @@
 
 html,body{
 	background-color: #E4FAF4;
-	height: 100%;
 }
 
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+
 /************* NAVBAR SECTION ******************/
+.main-body {
+	margin-top: 55px;
+	margin-bottom: 55px; 
+}
+
 .navbar{
 	color: #fff;
 	background-color: #2c3e50 !important;
-	position: top !important;
 }
 
 .navbar a span{
@@ -19,12 +28,20 @@ html,body{
 }
 
 .logo{
-    font-weight: bold;
-    margin-left: 20%;
+	font-weight: bold;
+	padding-left: 10%;
+}
+/* fa-bars icon for toggle in for sm/md device */
+.fa-bars { 
+	color: #fff;
 }
 
-
 /************** BLOCK BODY SECTION ****************/
+
+.main-body {
+
+}
+
 .college-section {
 	padding: 50px 10px;
 }
@@ -130,8 +147,9 @@ html,body{
 
 /*************FOOTER SECTION ******************/
 .footer{
-	padding-top: 15px;
-	padding-bottom: 5px;
+	padding-top: 15px;	
+	position: fixed;
+	bottom: 0;
 	background-color: #2c3e50;
 	color: #fff;
 }
@@ -143,4 +161,3 @@ html,body{
 .footer a:hover	{
 	color: #66ff66;
 }
-

@@ -1,4 +1,13 @@
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand logo" href="{% url 'home:index' %}"><span>EXAMPAPERS</span></a>
-  <button type="button" class="btn btn-outline-light upload-btn">Upload Paper</button>
-</nav>
+<header>
+  <nav class="navbar navbar-expand-md fixed-top bg-light">
+    <div class="container">
+      <a class="navbar-brand logo" href="{% url 'home:index' %}"><span>EXAMPAPERS</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <button type="button" class="btn btn-outline-light ml-auto">Upload Paper</button>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,5 +1,37 @@
-/*  CSS for Papers Page  Starts */
+/*  CSS for Papers Page  Starts 
 
+.paper-main-section {
+    padding: 30px 10px;
+}
 
+.paper-top-section {
+    height: 30px;
+    background-color: #009432;
+    border-radius: 5px; 
+}
+
+.paper-top-section p {
+    text-align: left;
+    color: #ffffff;
+    padding-top: 3px;  
+}
+*
+.paper-content-section {
+
+}
+
+.paper-sub {
+    background-color: #3f0e40;
+    padding: 0 0 !important;
+    height: 100%;
+}
+
+.paper-sub a {
+    color: #fff;
+}
+
+.paper-list > .active {
+    background-color: #009432 !important;
+} 
 
 /*  CSS for Papers Page  Ends */
